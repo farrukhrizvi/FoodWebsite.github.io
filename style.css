@@ -1,0 +1,47 @@
+.body{
+      background-image: url("background.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+}
+.main{
+    text-align: center;
+    background-color:burlywood;
+    margin: 18%;
+    opacity: 80%;
+    border: 2px solid wheat;
+    border-radius: 10px;
+}
+
+.form{
+    text-align: center;
+    margin-top: 8%;
+    background-color: wheat;
+    padding: 1%;
+    opacity: 70%;   
+    border: 3px solid rgba(165, 113, 45, 0.993); 
+    border-radius: 10px;
+}
+.footer{
+    color: wheat;
+    background-color: black;
+    width: 20%;
+    border: 1px solid peachpuff;
+    margin-top: 13%;
+}
+.body1{
+    background-image: url("image.jpg");
+ 
+}
+.main2{
+    background-image: url("asign.jpg");
+    background-position: center;
+}
+.form1{
+    text-align: center;
+    margin-top: 15%;
+    background-color: white;
+    padding: 1%;
+    opacity: 70%;   
+    border: 3px solid rgba(0, 0, 0, 0.993); 
+    border-radius: 10px;
+}

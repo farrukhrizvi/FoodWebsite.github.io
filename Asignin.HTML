@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyCBLaot_OazwqWefqh6HUbuZ1gvRIgny1g",
+    authDomain: "hackathon-2956f.firebaseapp.com",
+    projectId: "hackathon-2956f",
+    storageBucket: "hackathon-2956f.appspot.com",
+    messagingSenderId: "37530273668",
+    appId: "1:37530273668:web:18ee0af16dee786566bfd1",
+    measurementId: "G-PZPZ54LG6G"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+</head>
+<body class="main2">
+    <div>
+        <div class="form1">
+            <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">SIGNIN FORM</h1><br>
+          
+            <label style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">EMAIL:</label><br>
+            <input type="email" placeholder="Enter Email" id="aemail" style="width: 15%;"><br><br>
+           
+            <label style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">PASSWORD:</label><br>
+            <input type="password" placeholder="Enter Password" id="apass" style="width: 15%;"><br><br>
+            <button style="border: 10%; width: 7%; font-size: larger; font-family: 'Courier New', Courier, monospace; font-style: oblique;" onclick="alogin()">LOGIN</button>
+
+        </div>
+    </div>
+    <div class="footer" style="margin-top: 20%;">
+        <figcaption>@ DESIGN & BUILD BY FARRUKH RIZVI</figcaption>
+    </div>
+    <script src="App.Js"></script>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyCBLaot_OazwqWefqh6HUbuZ1gvRIgny1g",
+    authDomain: "hackathon-2956f.firebaseapp.com",
+    projectId: "hackathon-2956f",
+    storageBucket: "hackathon-2956f.appspot.com",
+    messagingSenderId: "37530273668",
+    appId: "1:37530273668:web:18ee0af16dee786566bfd1",
+    measurementId: "G-PZPZ54LG6G"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+</head>
+
+<body class="body1">
+    <div>
+        <div class="form" style="opacity: 90%; background-color: rgba(238, 95, 95, 0.322);">
+            <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">SIGNUP FORM</h1><br>
+            <label style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">USER
+                NAME:</label><br>
+            <input type="Name" placeholder="Enter Your Name" id="uname" style="width: 20%;"><br><br>
+            <label
+                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">EMAIL:</label><br>
+            <input type="email" placeholder="Enter Email" id="uemail" style="width: 20%;"><br><br>
+            <label style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">PHONE
+                NUMBER:</label><br>
+            <input type="phone" placeholder="Enter Phone Number" id="uPhone" style="width: 15%;"><br><br>
+            <label
+                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">COUNTRY:</label><br>
+            <input type="country" placeholder="Country" id="ucountry" style="width: 15%;"><br><br>
+            <label
+                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">CITY:</label><br>
+            <input type="City" placeholder="City" id="ucity" style="width: 15%;"><br><br>
+            <label
+                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">PASSWORD:</label><br>
+            <input type="password" placeholder="Enter Password" id="upass" style="width: 15%;"><br><br>
+           <button
+                style="border: 10%; width: 7%; font-size: larger; font-family: 'Courier New', Courier, monospace; font-style: oblique;" onclick="Usignup()">SIGNUP</button>
+
+        </div>
+    </div><br>
+    <div class="footer">
+        <figcaption>@ DESIGN & BUILD BY FARRUKH RIZVI</figcaption>
+    </div>
+
+    <script src="App.Js"></script>
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <style>
+        #main {
+            background-color: whitesmoke;
+        }
+    </style> -->
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " id="main">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="logo.jpg" width="60px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="INDEX.HTML">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="burger.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="pizza.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="roll.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <br><br>
+    <div class="card-group">
+        <div class="card">
+            <img src="burger.jpg">
+            <div class="card-body">
+                <h5 class="card-title" id="h5">BURGER</h5>
+                <p class="card-text">Life is too short to miss out on Double CheeseBurger.</p>
+                <p class="card-text"><small class="text-muted"></small></p>
+                <figure>
+                    <h6>PRIZE:150RS</h6>
+                </figure>
+                <button style="background-color: blanchedalmond;border: 2px solid tan;" onclick="burger()">BOOK
+                    NOW</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="pizza.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">PIZZA</h5>
+                <p class="card-text">Life is not about finding yourself, it's about finding Pizza.</p>
+                <p class="card-text"><small class="text-muted"></small></p>
+                <figure>
+                    <h6>PRIZE:700RS</h6>
+                </figure>
+                <button style="background-color: blanchedalmond;border: 2px solid tan;" onclick="pizza()">BOOK
+                    NOW</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="roll.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">ROLL</h5>
+                <p class="card-text">Give second chances but not for the same mistake.</p>
+                <p class="card-text"><small class="text-muted"></small></p>
+                <figure>
+                    <h6>PRIZE:100RS</h6>
+                </figure>
+                <button style="background-color: blanchedalmond;border: 2px solid tan;" onclick="roll()">BOOK
+                    NOW</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="card-group">
+        <div class="card">
+          <img src="bbq.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">B B Q</h5>
+            <p class="card-text">A cow, a pig, and a chicken walks into a grill. ...</p>
+            <p class="card-text"><small class="text-muted"></small></p>
+            <figure>
+                <h6>PRIZE:170RS</h6>
+            </figure>
+            <button style="background-color: blanchedalmond;border: 2px solid tan;" onclick="bbq()">BOOK
+                NOW</button>
+          </div>
+        
+        </div>
+        <div class="card">
+          <img src="sandwich.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">SANDWICH</h5>
+            <p class="card-text">Life is like a sandwich, the more you add to it, the better it becomes."..!</p>
+            <p class="card-text"><small class="text-muted"></small></p>
+            <figure>
+                <h6>PRIZE:200RS</h6>
+            </figure>
+            <button style="background-color: blanchedalmond;border: 2px solid tan;" onclick="sandwich()">BOOK
+                NOW</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="pasta.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">PASTA</h5>
+            <p class="card-text">Every fiber of my being is made of pasta...!</p>
+            <p class="card-text"><small class="text-muted"></small></p>
+            <figure>
+                <h6>PRIZE:250RS</h6>
+            </figure>
+            <button style="background-color: blanchedalmond;border: 2px solid tan;" onclick="pasta()">BOOK
+                NOW</button>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="App.Js"></script>
+</body>
+
+</html>
